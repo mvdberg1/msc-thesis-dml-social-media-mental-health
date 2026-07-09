@@ -26,7 +26,6 @@ SUBMISSION_CHECKLIST.md
 
 # Drafting scripts kept locally but not part of the GitHub replication package
 R/thesis files/
-R/core files/03_results_core.R
 
 # Local/generated temporary outputs
 figures/

@@ -9,15 +9,12 @@ Marloes van den Berg, MSc Econometrics, University of Amsterdam.
 ## Repository contents
 
 - `R/run_replication.R`: entry point for the ordered replication workflow.
-- `R/core files/`: the core scripts used to regenerate the tables and figures
-  referenced from the thesis text.
-  - `01_data_core.R`: data construction and Chapter 3 descriptives.
-  - `02_methodology_core.R`: Chapter 4 methodology figures.
-  - `03_dml_results_core.R`: pooled OLS, PLR-DML, and IRM-DML results.
-  - `04_linear_panel_core.R`: linear panel benchmarks and model tests.
-  - `05_prepare_core_inputs.R`: numeric inputs for comparisons and figures.
-  - `06_fe_dml_comparison_core.R` to `12_summary_figures_core.R`: paired
-    comparisons, robustness checks, and Chapter 5 summary figures.
+- `R/core files/01_data_core.R`: data selection, cleaning, and construction of
+  the analysis dataset.
+- `R/core files/02_methodology_core.R`: treatment/outcome/control definitions,
+  DML design construction, clustered folds, and nuisance learner choices.
+- `R/core files/03_results_core.R`: pooled OLS, panel models, PLR-DML, IRM-DML,
+  and the main weekend-use robustness check, saved as numeric results only.
 - `R/package_versions.csv`: R package versions used for the final analysis.
 - `REPLICATION.md`: step-by-step data and software instructions.
 
@@ -40,16 +37,10 @@ cleaning scripts then regenerate the local files under `data/analysis/`.
 
 ## Reproducibility
 
-The complete replication entry point is:
+The core replication entry point is:
 
 ```sh
-Rscript R/run_replication.R core
-```
-
-For a faster main-text check that skips the appendix robustness scripts:
-
-```sh
-Rscript R/run_replication.R main
+Rscript R/run_replication.R
 ```
 
 See `REPLICATION.md` for required software, directory structure, script order,

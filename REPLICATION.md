@@ -27,13 +27,12 @@ records the resulting wave and variable documentation under `data/analysis/`.
 
 ## Software
 
-The analysis was run with R 4.4 and the following principal packages:
+The analysis was run with R 4.4 and the following principal packages used by
+the core scripts:
 `DoubleML`, `mlr3`, `mlr3learners`, `data.table`, `dplyr`, `haven`, `plm`,
-`fixest`, `sandwich`, `lmtest`, `glmnet`, `ranger`, `nnet`, `future`, `lgr`,
-`ggplot2`, `gridExtra`, `cowplot`, `nlme`, `rpart`, and `scales`. The exact
-versions used for the final analysis are recorded in `R/package_versions.csv`.
-A TeX installation is only needed if the thesis PDF itself is rebuilt outside
-this replication repository.
+`sandwich`, `lmtest`, `glmnet`, `ranger`, `nnet`, and `lgr`. The exact versions
+used for the final analysis are recorded in `R/package_versions.csv`. A TeX
+installation is not needed for these core scripts.
 
 All stochastic DML folds, learners, simulations, and bootstrap procedures use
 fixed seeds in the corresponding scripts. Respondent identifiers, rather than
@@ -41,47 +40,29 @@ person-wave records, define folds and bootstrap clusters.
 
 ## Workflows
 
-The complete core workflow rebuilds the cleaned analysis data and regenerates
-the thesis tables and figures produced by the R scripts:
+The core workflow rebuilds the cleaned analysis data and runs the empirical
+methods without LaTeX table or figure formatting:
 
 ```sh
-Rscript R/run_replication.R core
+Rscript R/run_replication.R
 ```
 
-For a faster main-text check that skips the appendix robustness scripts:
-
-```sh
-Rscript R/run_replication.R main
-```
-
-The complete workflow is slower because it re-estimates Double Machine
-Learning learner comparisons, paired bootstrap tests, and robustness checks.
-Random seeds and computational settings are fixed in the corresponding scripts.
+The workflow re-estimates the main linear, panel, PLR-DML, and IRM-DML models
+and saves numeric CSV outputs under `tables/core_numeric/`. Random seeds and
+computational settings are fixed in the corresponding scripts.
 
 ## Script order
 
 1. `R/core files/01_data_core.R` constructs the cleaned analysis data from
-   licensed UKHLS youth files and writes the Chapter 3 descriptive outputs.
-2. `R/core files/02_methodology_core.R` writes the Chapter 4 methodology
-   figures, including the PLR causal diagram and bias-comparison figure.
-3. `R/core files/03_dml_results_core.R` estimates the pooled OLS, PLR-DML, and
-   IRM-DML result tables.
-4. `R/core files/04_linear_panel_core.R` estimates the linear panel benchmarks,
-   panel-model tests, and panel schematic.
-5. `R/core files/05_prepare_core_inputs.R` prepares numeric inputs used by the
-   paired comparisons and summary figures.
-6. `R/core files/06_fe_dml_comparison_core.R` and
-   `R/core files/07_fe_irm_comparison_core.R` run the fixed-effects versus DML
-   paired comparisons. `R/run_replication.R core` repeats these scripts for all
-   four outcomes.
-7. `R/core files/08_robustness_design_core.R` to
-   `R/core files/11_robustness_paired_comparisons_core.R` run the robustness
-   checks used in the main text and appendix.
-8. `R/core files/12_summary_figures_core.R` writes the Chapter 5 summary
-   figures.
+   licensed UKHLS youth files.
+2. `R/core files/02_methodology_core.R` records the DML setup: treatments,
+   outcomes, controls, respondent clusters, cross-fitting, and nuisance
+   learners.
+3. `R/core files/03_results_core.R` estimates the main pooled OLS, panel,
+   PLR-DML, IRM-DML, and weekend robustness specifications and writes numeric
+   CSV files.
 
 Generated analysis data are stored locally under `data/analysis/`; numeric
-estimates under `tables/`; and figures under `figures/`. These generated
-folders are not redistributed in the GitHub repository. The raw UKHLS files are
-never modified. Licensed users can regenerate the local outputs from the
-scripts above.
+estimates under `tables/core_numeric/`. These generated folders are not
+redistributed in the GitHub repository. The raw UKHLS files are never modified.
+Licensed users can regenerate the local outputs from the scripts above.
