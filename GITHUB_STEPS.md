@@ -18,13 +18,13 @@ first commit named `Prepare thesis replication package`.
 7. Do not add a `.gitignore`.
 8. Do not add a licence unless your supervisor explicitly asks for one.
 9. Click `Create repository`.
-10. Copy the HTTPS repository URL. It will look like:
-    `https://github.com/YOUR-USERNAME/msc-thesis-dml-social-media-mental-health.git`.
+10. Copy the HTTPS repository URL:
+    `https://github.com/mvdberg1/msc-thesis-dml-social-media-mental-health.git`.
 11. In Terminal, run:
 
 ```sh
 cd "/Users/m.vandenberg/Documents/MSc Econometrics/Thesis"
-git remote add origin https://github.com/YOUR-USERNAME/msc-thesis-dml-social-media-mental-health.git
+git remote add origin https://github.com/mvdberg1/msc-thesis-dml-social-media-mental-health.git
 git push -u origin main
 ```
 
@@ -49,7 +49,7 @@ After the push, the repository page should show `README.md`, `thesis.pdf`,
 Copy the repository URL, for example:
 
 ```text
-https://github.com/YOUR-USERNAME/msc-thesis-dml-social-media-mental-health
+https://github.com/mvdberg1/msc-thesis-dml-social-media-mental-health
 ```
 
 This URL can then be added to the thesis in the reproducibility paragraph at

@@ -908,7 +908,7 @@ To compare fixed-effects and DML estimates, we use a paired respondent-cluster b
 
 The implemented workflow follows the architecture outlined by \citet{bach2024doubleml}. Internally, \texttt{DoubleMLPLR} and \texttt{DoubleMLIRM} invoke the appropriate learners from the \texttt{mlr3} ecosystem, which in turn rely on \texttt{glmnet}, \texttt{ranger}, and \texttt{nnet} for the learner-specific computation \citep{friedman2010glmnet,wright2017ranger,venables2002mass}.
 
-Finally, to facilitate reproducibility, the repository includes a \texttt{REPLICATION.md} file documenting the restricted UKHLS data source, required directory structure, software dependencies, script order, random seeds, and commands needed to reproduce the results. Because the raw UKHLS data cannot be redistributed, replication requires users to provide their own licensed copy.
+Finally, to facilitate reproducibility, the replication repository is available at \url{https://github.com/mvdberg1/msc-thesis-dml-social-media-mental-health}. It includes a \texttt{REPLICATION.md} file documenting the restricted UKHLS data source, required directory structure, software dependencies, script order, random seeds, and commands needed to reproduce the results. Because the raw UKHLS data cannot be redistributed, replication requires users to provide their own licensed copy.
 
 With the data, estimands, identifying assumptions, and estimation procedure now fully specified, Chapter \ref{chap:res} presents the empirical findings.
 
