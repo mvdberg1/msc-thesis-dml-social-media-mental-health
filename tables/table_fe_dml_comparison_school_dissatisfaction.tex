@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\caption{Paired comparisons of fixed-effects and DML estimates for school dissatisfaction}
+\label{tab:fe_dml_comparison_school_dissatisfaction}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccc}
+\hline
+Statistic & Elastic net & Lasso & Random forest & Neural net
+\\
+\hline
+\multicolumn{5}{l}{\textit{Panel A: Ordered-treatment FE versus PLR-DML}} \\
+$t$-statistic & -1.256 & -1.215 & -1.175 & -1.133
+\\
+$p$-value & 0.209 & 0.224 & 0.240 & 0.257
+\\[0.4ex]
+\multicolumn{5}{l}{\textit{Panel B: Binary-treatment FE versus IRM-DML}} \\
+$t$-statistic & -1.355 & -1.362 & -2.339 & --
+\\
+$p$-value & 0.175 & 0.173 & 0.019 & --
+\\
+\hline
+\end{tabular}
+\begin{minipage}{0.96\textwidth}
+\footnotesize Notes: Panel A compares the fixed-effects coefficient on the ordered five-category weekday-use measure with the PLR-DML coefficients in Table~\ref{tab:dml_school_methods}. Panel B compares a separately estimated fixed-effects coefficient on the binary high-use indicator with the IRM-DML average treatment effects in Table~\ref{tab:irm_school_methods}. The neural-net IRM cell is not reported because that learner was not retained in the binary-treatment analysis. For both panels, standard errors of the paired differences use 500 respondent-cluster bootstrap replications, and the two-sided $p$-values use the standard-normal approximation. All comparisons use the same outcome-specific sample with $N=4,316$ person-wave observations.
+\end{minipage}
+\end{table}

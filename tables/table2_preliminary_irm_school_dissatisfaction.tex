@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\caption{Preliminary interactive-regression estimates for School dissatisfaction}
+\label{tab:prelim_irm_school_dissatisfaction}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\hline
+ & \multicolumn{4}{c}{Wave-specific OLS} & \multicolumn{2}{c}{Pooled OLS} & \multicolumn{2}{c}{Within-respondent FE} \\
+\cline{2-5} \cline{6-7} \cline{8-9}
+Specification & l & m & n & o & No wave FE & + wave FE & No wave FE & + wave FE \\
+\hline
+Bivariate & 0.538*** (0.129) & 0.470*** (0.114) & 0.544*** (0.149) & 0.639*** (0.158) & 0.536*** (0.074) & 0.540*** (0.074) & 0.172* (0.095) & 0.077 (0.090)
+\\
++ Basic controls & 0.491*** (0.129) & 0.400*** (0.113) & 0.487*** (0.151) & 0.569*** (0.158) & 0.473*** (0.074) & 0.477*** (0.074) & 0.077 (0.090) & 0.077 (0.090)
+\\
++ Rich controls & 0.347* (0.196) & 0.106 (0.122) & 0.275* (0.154) & 0.173 (0.171) & 0.192** (0.081) & 0.207** (0.080) & 0.034 (0.104) & 0.034 (0.104)
+\\
+DML IRM ATE (+ rich controls) & 1.042 (0.955) & 0.457** (0.224) & 0.308 (0.482) & -0.209 (0.659) & 0.349** (0.165) & 0.359** (0.152) &  & 
+\\
+\hline
+\end{tabular}
+}
+\begin{minipage}{0.95\textwidth}
+\footnotesize Notes: cells report the coefficient on the binary indicator for at least four hours of weekday social-media use with standard errors in parentheses. The first three rows are linear specifications; wave-specific and pooled columns use OLS, while the last two columns use within-respondent fixed effects. Wave-specific OLS columns use HC1 robust standard errors; pooled OLS and within-FE columns cluster standard errors at the respondent level. The DML row uses DoubleMLIRM with the ATE score, 5-fold cross-fitting, \\texttt{regr.ranger} for the outcome nuisance, and \\texttt{classif.ranger} for the propensity score. Pooled DML columns use respondent clustering via \\texttt{DoubleMLClusterData}; DML with respondent fixed effects is not yet reported and those cells are left blank. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

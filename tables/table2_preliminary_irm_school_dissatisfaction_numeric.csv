@@ -1,0 +1,33 @@
+"outcome","outcome_label","treatment","specification","estimator","sample","wave_fe","respondent_fe","estimate","std_error","p_value","n"
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.537622693661808,0.128785745028607,3.18176829963356e-05,1319
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.490518560461043,0.129386285166561,0.000156764767850357,1319
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.347485704966703,0.19616651960711,0.0770214698819525,613
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave l",FALSE,FALSE,1.04171879025294,0.954856589178921,0.275286591683506,613
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.470204830804679,0.114180881431539,4.0434126584377e-05,1406
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.399612137000809,0.113153085149048,0.000426440812330453,1405
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.105928088751741,0.122009806761757,0.3854435524498,1376
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave m",FALSE,FALSE,0.456533550907227,0.224048223345769,0.0415841936026214,1376
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.543526110583013,0.149398883753857,0.000285630881888341,1278
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.486851292584811,0.151209075818715,0.00131552358955532,1278
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.275359009313025,0.154310187437974,0.0746027332926696,1234
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave n",FALSE,FALSE,0.308087913832546,0.482330885405355,0.522986846952861,1234
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.638984652835836,0.158004136144723,5.60753505306508e-05,1136
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.568532508994234,0.157738481535477,0.000326637885910159,1136
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,0.172816147108132,0.170786965617296,0.311825480122046,1093
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave o",FALSE,FALSE,-0.209164177490196,0.65881675121966,0.750875917470627,1093
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.536059602105268,0.0744908354274276,7.07754711217247e-13,5139
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.472702107085022,0.0742369006276419,2.08895657802616e-10,5138
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.191786346172168,0.080939646211382,0.0178563263205832,4316
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled",FALSE,FALSE,0.348950193878249,0.164596711172758,0.0340033984506772,4316
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.540468276191642,0.0740219305002364,3.28277228591359e-13,5139
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.477378655643453,0.0736879588603337,1.01381404671694e-10,5138
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.20678234990841,0.0803695717125533,0.0101186139073054,4316
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled + wave FE",TRUE,FALSE,0.358809405707786,0.152096964241477,0.0183201437567272,4316
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.171717171717171,0.0946049272478409,0.0697209959347935,3462
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0765446450071149,0.0902568744870464,0.396539655128949,3462
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.0337955576094576,0.104436034510335,0.746299058411614,2709
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0770460033343838,0.0899508126674752,0.391847356182176,3462
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.0770763676953894,0.089918935307573,0.391492992752057,3462
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.0337359612809581,0.103934557427277,0.745551314599028,2709
+"school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA

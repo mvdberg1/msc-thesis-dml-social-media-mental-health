@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\caption{Partially linear double machine learning estimates for loneliness across nuisance learners}
+\label{tab:dml_loneliness_methods}
+\begin{tabular}{lcccc}
+\hline
+Variable & Elastic net & Lasso & Random forest & Neural net
+\\
+\hline
+Weekday social-media use & 0.024* & 0.022* & 0.024* & 0.017
+\\
+ & (0.013) & (0.013) & (0.013) & (0.013)
+\\
+N & 4,298 & 4,298 & 4,298 & 4,298
+\\
+\hline
+\end{tabular}
+\begin{minipage}{0.95\textwidth}
+\footnotesize Notes: All columns report pooled double machine learning estimates from the partially linear regression specification for the coefficient on weekday social-media use. The same common outcome-specific sample with rich controls is used throughout, and wave fixed effects are included among the controls. Elastic net uses alpha = 0.5, while Lasso uses alpha = 1. Standard errors come from respondent-clustered DoubleML inference with 5-fold cross-fitting. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

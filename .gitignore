@@ -1,0 +1,64 @@
+# macOS and editor files
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+*.swp
+*.swo
+*.zip
+
+# Restricted/raw data: do not upload to GitHub
+UKDA-6614-stata/
+data/analysis/
+data/raw/
+raw/
+*.dta
+*.sav
+*.por
+*.xpt
+
+# Local/generated temporary outputs
+tmp/
+outputs/
+Rplots.pdf
+test_*.png
+
+# Row-level derived diagnostics from restricted survey data
+tables/**/*propensities*.csv
+
+# Unused local/presentation images not needed for thesis replication
+figures/iphone_screen_time_marloes.jpg
+figures/intro_phone_pickups.jpg
+figures/intro_screen_time.jpg
+figures/newcom_social_media_2026.jpg
+figures/nos_headline_*.png
+figures/victor_chernozhukov.png
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+
+# Keep final PDFs and source files trackable, but ignore old local drafts
+progress reports/
+research proposal/
+papers/
+stata overzicht variabelen/
+~$*
+
+# Optional presentation/build copies that are not needed for thesis replication
+thesis latex/*
+!thesis latex/BibTeXTemplate.bib
+thesis_presentation_beamer.*
+Progress Report 4 - MSc Thesis.pdf
+REPLICATION.html

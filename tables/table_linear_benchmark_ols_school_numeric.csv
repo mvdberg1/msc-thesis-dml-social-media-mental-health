@@ -1,0 +1,85 @@
+"outcome","outcome_label","row_label","specification","model_kind","estimate","std_error","p_value","n"
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(1)","lm",0.210291827801025,0.0332638699316624,2.84505693671692e-10,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(2)","lm",0.172169293545685,0.0332765742129818,2.39688774983166e-07,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(3)","lm",0.0714967720462025,0.0351088043323651,0.0417681576413957,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(4)","fe",0.0137986482697522,0.0494509987260396,0.780254272623218,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(5)","fe",0.0126518641319513,0.0498152667097884,0.799548549931415,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(6)","re",0.0604583407786473,0.0327861874670455,0.06524945070818,4316
+"school_dissatisfaction","School dissatisfaction","Age","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Age","(2)","lm",0.158544631074067,0.0152054124406258,3.71485919553827e-25,4316
+"school_dissatisfaction","School dissatisfaction","Age","(3)","lm",0.134131345725759,0.0157520831158428,2.27247923199183e-17,4316
+"school_dissatisfaction","School dissatisfaction","Age","(4)","fe",0.304504745164602,0.0312136939009404,7.45334734534233e-22,4316
+"school_dissatisfaction","School dissatisfaction","Age","(5)","fe",0.0286591479767228,0.128184359130003,0.82311590235072,4316
+"school_dissatisfaction","School dissatisfaction","Age","(6)","re",0.160058446564911,0.0152051506710801,1.33484093208473e-25,4316
+"school_dissatisfaction","School dissatisfaction","Female","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Female","(2)","lm",0.275286866560108,0.0557439739438048,8.17402483590758e-07,4316
+"school_dissatisfaction","School dissatisfaction","Female","(3)","lm",0.243068095571562,0.058056992961266,2.88705628721531e-05,4316
+"school_dissatisfaction","School dissatisfaction","Female","(4)","fe",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Female","(5)","fe",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Female","(6)","re",0.21584075433018,0.057259169170381,0.00016575117575781,4316
+"school_dissatisfaction","School dissatisfaction","Urban area","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Urban area","(2)","lm",0.065750677326445,0.0656793593875875,0.316841491623041,4316
+"school_dissatisfaction","School dissatisfaction","Urban area","(3)","lm",-0.0214130532873712,0.0677522074222553,0.751980314530643,4316
+"school_dissatisfaction","School dissatisfaction","Urban area","(4)","fe",0.10021532223438,0.469935548795646,0.831157763354949,4316
+"school_dissatisfaction","School dissatisfaction","Urban area","(5)","fe",0.0458235516349884,0.481206952394648,0.924147576557185,4316
+"school_dissatisfaction","School dissatisfaction","Urban area","(6)","re",0.00682963887549466,0.0651964462706067,0.916575304217823,4316
+"school_dissatisfaction","School dissatisfaction","Close friends","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Close friends","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Close friends","(3)","lm",-0.351592090886906,0.0440566409750806,1.85667128123928e-15,4316
+"school_dissatisfaction","School dissatisfaction","Close friends","(4)","fe",-0.167480684145505,0.0747124083862756,0.0251253623964163,4316
+"school_dissatisfaction","School dissatisfaction","Close friends","(5)","fe",-0.170411753243981,0.0747557863651555,0.0227699663674153,4316
+"school_dissatisfaction","School dissatisfaction","Close friends","(6)","re",-0.297924358061156,0.0433688287438072,7.36743410102521e-12,4316
+"school_dissatisfaction","School dissatisfaction","Parents/step-parents in household","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Parents/step-parents in household","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Parents/step-parents in household","(3)","lm",-0.0745444622398081,0.0620337217432881,0.229555350907957,4316
+"school_dissatisfaction","School dissatisfaction","Parents/step-parents in household","(4)","fe",-0.261832005910345,0.218118875738068,0.230165980533969,4316
+"school_dissatisfaction","School dissatisfaction","Parents/step-parents in household","(5)","fe",-0.257327206035011,0.216443028109113,0.234667221551019,4316
+"school_dissatisfaction","School dissatisfaction","Parents/step-parents in household","(6)","re",-0.109038440464502,0.0613737990409894,0.0757003489829011,4316
+"school_dissatisfaction","School dissatisfaction","Grandparents in household","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Grandparents in household","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Grandparents in household","(3)","lm",0.035253271690365,0.116577484639946,0.762360267482462,4316
+"school_dissatisfaction","School dissatisfaction","Grandparents in household","(4)","fe",0.352015146386465,0.55036771054505,0.522528421708534,4316
+"school_dissatisfaction","School dissatisfaction","Grandparents in household","(5)","fe",0.358916747244848,0.551718972528451,0.515439535273803,4316
+"school_dissatisfaction","School dissatisfaction","Grandparents in household","(6)","re",0.020257335238883,0.115778252527718,0.861114093802861,4316
+"school_dissatisfaction","School dissatisfaction","Siblings/step-siblings in household","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Siblings/step-siblings in household","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Siblings/step-siblings in household","(3)","lm",0.0135621968525359,0.0279770600529227,0.627870446231843,4316
+"school_dissatisfaction","School dissatisfaction","Siblings/step-siblings in household","(4)","fe",-0.0116138559512383,0.13420225697484,0.931048519742986,4316
+"school_dissatisfaction","School dissatisfaction","Siblings/step-siblings in household","(5)","fe",0.0055501114297551,0.137897208160949,0.967900525920741,4316
+"school_dissatisfaction","School dissatisfaction","Siblings/step-siblings in household","(6)","re",0.0183448481700941,0.0273353954939082,0.502191519335717,4316
+"school_dissatisfaction","School dissatisfaction","Family meals","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Family meals","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Family meals","(3)","lm",-0.204973321183773,0.0288759816042693,1.4704963719773e-12,4316
+"school_dissatisfaction","School dissatisfaction","Family meals","(4)","fe",-0.046654270674912,0.053080650340266,0.379576187076487,4316
+"school_dissatisfaction","School dissatisfaction","Family meals","(5)","fe",-0.0395856238950935,0.0529796780664654,0.455066821032857,4316
+"school_dissatisfaction","School dissatisfaction","Family meals","(6)","re",-0.183114218665289,0.0272327592178421,2.00022915049172e-11,4316
+"school_dissatisfaction","School dissatisfaction","Television/video hours","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Television/video hours","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Television/video hours","(3)","lm",0.230951902724222,0.0400682046894529,8.79318826995893e-09,4316
+"school_dissatisfaction","School dissatisfaction","Television/video hours","(4)","fe",0.00164686062450592,0.0550392633793906,0.976133510959656,4316
+"school_dissatisfaction","School dissatisfaction","Television/video hours","(5)","fe",0.00252616959732377,0.0548991516174744,0.963304522907398,4316
+"school_dissatisfaction","School dissatisfaction","Television/video hours","(6)","re",0.164276957442443,0.0369488250129522,8.96705590063776e-06,4316
+"school_dissatisfaction","School dissatisfaction","Smartphone","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Smartphone","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Smartphone","(3)","lm",-0.101476650250551,0.0818655167279916,0.215208672421608,4316
+"school_dissatisfaction","School dissatisfaction","Smartphone","(4)","fe",0.0596833175778162,0.113132987990038,0.59788808517309,4316
+"school_dissatisfaction","School dissatisfaction","Smartphone","(5)","fe",0.0622301514899524,0.113021964368716,0.581986829487364,4316
+"school_dissatisfaction","School dissatisfaction","Smartphone","(6)","re",-0.0449915504308121,0.0767635095505706,0.55783519614904,4316
+"school_dissatisfaction","School dissatisfaction","Tablet","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Tablet","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Tablet","(3)","lm",-0.108113196650696,0.0533894995543468,0.042930318098676,4316
+"school_dissatisfaction","School dissatisfaction","Tablet","(4)","fe",0.0362804229171129,0.0859242771065811,0.672911205610879,4316
+"school_dissatisfaction","School dissatisfaction","Tablet","(5)","fe",0.0328704708743491,0.086026506403218,0.702442543404122,4316
+"school_dissatisfaction","School dissatisfaction","Tablet","(6)","re",-0.0756237704609049,0.0503668628363167,0.133310645925365,4316
+"school_dissatisfaction","School dissatisfaction","Gaming console","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Gaming console","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Gaming console","(3)","lm",0.0556342078688113,0.0634157957016866,0.380376939647207,4316
+"school_dissatisfaction","School dissatisfaction","Gaming console","(4)","fe",-0.0711053153778223,0.109743299731334,0.517131271948109,4316
+"school_dissatisfaction","School dissatisfaction","Gaming console","(5)","fe",-0.0726278436169858,0.110291291191162,0.510310114748915,4316
+"school_dissatisfaction","School dissatisfaction","Gaming console","(6)","re",0.0254343363370709,0.0604569740490957,0.673994213157058,4316
+"school_dissatisfaction","School dissatisfaction","Laptop/desktop computer","(1)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Laptop/desktop computer","(2)","lm",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Laptop/desktop computer","(3)","lm",-0.158727461232327,0.0642633415952468,0.0135517548255331,4316
+"school_dissatisfaction","School dissatisfaction","Laptop/desktop computer","(4)","fe",-0.112796260594783,0.100646644750095,0.262584720580212,4316
+"school_dissatisfaction","School dissatisfaction","Laptop/desktop computer","(5)","fe",-0.103908553447187,0.10021451874252,0.299964569550548,4316
+"school_dissatisfaction","School dissatisfaction","Laptop/desktop computer","(6)","re",-0.136153572167409,0.0616235508278913,0.0271967349237781,4316

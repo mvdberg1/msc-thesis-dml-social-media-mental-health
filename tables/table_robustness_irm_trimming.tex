@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\caption{IRM propensity-truncation robustness for life dissatisfaction}
+\label{tab:robustness_irm_trimming}
+\small
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{lccc}
+\hline
+Propensity threshold & Elastic net & Lasso & Random forest
+\\
+\hline
+Default & 0.168 (0.121) & 0.224 (0.138) & -0.017 (0.205)
+\\
+1\% & 0.191* (0.111) & 0.230** (0.112) & 0.144 (0.128)
+\\
+2.5\% & 0.186** (0.087) & 0.224*** (0.085) & 0.196** (0.096)
+\\
+5\% & 0.169** (0.071) & 0.215*** (0.072) & 0.222*** (0.068)
+\\
+10\% & 0.159*** (0.051) & 0.203*** (0.052) & 0.242*** (0.051)
+\\
+\hline
+\end{tabular}
+\begin{minipage}{0.96\textwidth}
+\footnotesize Notes: Estimated propensity scores are truncated to the interval defined by each threshold before evaluating the ATE score. The default threshold is $10^{-12}$ and reproduces the main IRM folds; all rows within a learner use the same fold partition. Cells report IRM-DML estimates with respondent-clustered standard errors in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

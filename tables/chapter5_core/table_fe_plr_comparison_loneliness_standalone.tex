@@ -1,0 +1,29 @@
+\begin{table}[!htbp]
+\centering
+\caption{Paired comparison of fixed-effects and PLR-DML estimates for loneliness}
+\label{tab:fe_plr_comparison_loneliness}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccc}
+\hline
+Statistic & Elastic net & Lasso & Random forest & Neural net
+\\
+\hline
+Fixed-effects estimate & 0.042 & 0.042 & 0.042 & 0.042
+\\
+PLR-DML estimate & 0.024 & 0.022 & 0.024 & 0.017
+\\
+Difference (FE $-$ DML) & 0.018 & 0.019 & 0.018 & 0.025
+\\
+Bootstrap standard error & 0.019 & 0.019 & 0.021 & 0.021
+\\
+$t$-statistic & 0.957 & 1.030 & 0.880 & 1.200
+\\
+$p$-value & 0.338 & 0.303 & 0.379 & 0.230
+\\
+\hline
+\end{tabular}
+\begin{minipage}{0.96\textwidth}
+\footnotesize Notes: The null hypothesis is equality of the fixed-effects and PLR-DML coefficients. The fixed-effects estimate is column (5) of Table~\ref{tab:pooled_ols_life}; the DML estimates are from Table~\ref{tab:dml_life_methods}. The standard error of each difference is estimated from 500 paired respondent-cluster bootstrap replications. Complete respondent histories are resampled, and both estimators are re-estimated in every replication. The two-sided $p$-values use the standard-normal approximation. All estimates use the same outcome-specific sample with $N=4,298$ person-wave observations.
+\end{minipage}
+\end{table}

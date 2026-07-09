@@ -1,0 +1,129 @@
+"suite","outcome","outcome_label","treatment","specification","estimator","sample","wave_fe","respondent_fe","estimate","std_error","p_value","n"
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.238416902905745,0.0755037597227786,0.00166689619175352,627
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.218078556264992,0.0730600301936285,0.0029476925823053,627
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.148226704660368,0.0798106103414285,0.063783303008433,614
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave l",FALSE,FALSE,0.0615405639951232,0.254201439600674,0.80870756903978,614
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.171926611249397,0.0467762541609544,0.000246300958176022,1408
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.157663036206552,0.0460497037210679,0.000635411696100846,1407
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.0864704877406103,0.0499878361097194,0.0838899583608556,1377
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave m",FALSE,FALSE,0.234316784461503,0.0968672027452639,0.0155654394888358,1377
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.0981662745757028,0.0484063812903067,0.0427749185897016,1258
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.0940223570200978,0.0471268771322751,0.046249166594936,1258
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.024955763623658,0.0494143945360084,0.613631502893586,1218
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave n",FALSE,FALSE,-0.0934117483030725,0.0887100837320518,0.292340836396994,1218
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.108616755107089,0.054549127914712,0.0467025363540672,1131
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.101378443637619,0.0528021189006872,0.0551139760756596,1131
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,-0.0141762271925844,0.0583528083194545,0.808099066445671,1089
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave o",FALSE,FALSE,-0.124128750318846,0.17003712535698,0.465384257434881,1089
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.144847084448539,0.0289307407359338,5.75304246476318e-07,4424
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.134720023459884,0.027972832984396,1.51286830999554e-06,4423
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.0598541040110643,0.0287269216352758,0.0372601196645742,4298
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled",FALSE,FALSE,0.0265453725930408,0.0456083780602845,0.560547532491089,4298
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.144707726668686,0.0289342471081313,5.91649020035663e-07,4424
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.134729126879875,0.0279753097224753,1.51366336066838e-06,4423
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.0604815555652557,0.0287215946189801,0.0352812182863709,4298
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled + wave FE",TRUE,FALSE,0.0258671546072516,0.0439592276412692,0.556240251865876,4298
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.0793928779918271,0.039962675918909,0.0471895150267669,2777
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0689149934377363,0.0398986547567268,0.0843844863150758,2777
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.0663914990082914,0.0406377293540275,0.102588046964675,2689
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"results_binary","loneliness","Loneliness","high_social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0691829064032872,0.0399506474906695,0.0835869099855806,2777
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.0688529451435606,0.0399329146957517,0.0849310926231681,2777
+"results_binary","loneliness","Loneliness","high_social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.0663754652102269,0.0406483610014206,0.102760813721588,2689
+"results_binary","loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.588097897836887,0.121153337170805,1.35366604513202e-06,1317
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.541951572424442,0.118330967698797,5.09199807314675e-06,1317
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.453237945119642,0.185598964023016,0.014903125389717,611
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave l",FALSE,FALSE,2.14897138955009,1.49716925130475,0.151185578242294,611
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.550727679820887,0.107743163231413,3.63665596016881e-07,1407
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.497698909154094,0.105137843309711,2.42683428091481e-06,1406
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.23478326389922,0.110067033352299,0.0330976562632853,1377
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave m",FALSE,FALSE,0.359429396445631,0.399379825547974,0.368136835853549,1377
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.314348846985963,0.115423772655539,0.0065487887544912,1279
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.271836873500394,0.109529769174461,0.0131981122885326,1279
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.0482178187365536,0.114865521793135,0.674723929236227,1235
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave n",FALSE,FALSE,0.0563774363446979,0.210536230267167,0.788868503292229,1235
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.368939064987697,0.130985012413575,0.00493702840086492,1134
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.313894129032572,0.129054542526292,0.0151594217211064,1134
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,0.0382891054790206,0.136868838112966,0.779723572440108,1093
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave o",FALSE,FALSE,-0.282540188343675,0.446339345500699,0.5267228416885,1093
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.463347616327041,0.0644685937451419,7.56260889762681e-13,5137
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.413720525297957,0.062340556025525,3.54458108237018e-11,5136
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.174119486821955,0.067730572892002,0.0101808466987073,4316
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled",FALSE,FALSE,0.254027455813603,0.165163256126356,0.124039188081622,4316
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.463068940709295,0.0645625794859037,8.41750663170588e-13,5137
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.413977486933773,0.0624264846429914,3.6663871498926e-11,5136
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.175693344313754,0.0677992511639083,0.00959176754537781,4316
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled + wave FE",TRUE,FALSE,0.239156601766211,0.145779715548161,0.100894153900636,4316
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.139351446099912,0.0752844166465951,0.0643782817289473,3461
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0915975546772097,0.0743693973656505,0.218282491009621,3461
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.0361360756653284,0.0888780533350154,0.684391574860892,2708
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0890119097696772,0.0740741794870985,0.229697149129383,3461
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.0890280383184155,0.0740750395847718,0.229618199085056,3461
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.0360747371144081,0.0887353116468161,0.684418907465594,2708
+"results_binary","life_dissatisfaction","Life dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.538800275985217,0.110503636717726,1.21527155802754e-06,1318
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.525695514431509,0.111212605199266,2.52456468423034e-06,1318
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.369467725485033,0.199056790776971,0.0639465299576789,613
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave l",FALSE,FALSE,0.11648671748587,0.405049357349779,0.773663297949186,613
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.562685120361897,0.106768636056734,1.57487944073085e-07,1415
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.542655669890751,0.108120641937216,5.85631176795217e-07,1414
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.393879393445557,0.117628768999494,0.000834872754616377,1384
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave m",FALSE,FALSE,0.902399851753326,0.610481065251822,0.139360065566916,1384
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.543430431211923,0.11742928074008,4.07289489280457e-06,1281
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.541451875619223,0.118667384687711,5.53418479627238e-06,1281
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.315137383651693,0.130247746087567,0.0156882743788708,1237
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave n",FALSE,FALSE,0.577144770974524,0.232342309778803,0.012990564364044,1237
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.561019591892078,0.147723005197213,0.000153716339111165,1139
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.570735268504918,0.148589607466467,0.000129304117065743,1139
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,0.231521216699128,0.156938899426172,0.140446417904991,1095
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave o",FALSE,FALSE,-0.584732981562271,0.783133872189893,0.455270174104207,1095
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.549128909782154,0.0627531905388918,2.83336381136157e-18,5153
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.540167517387469,0.0632631842454448,1.76950933720297e-17,5152
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.327864279936275,0.0726052061122064,6.47952949999539e-06,4329
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled",FALSE,FALSE,0.518619343634227,0.132730726067255,9.3331560510774e-05,4329
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.551736568381672,0.0626507325742847,1.73627337573758e-18,5153
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.54284916637606,0.0631393643556829,1.0660794682489e-17,5152
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.33615992202199,0.0726328426585541,3.79725505590817e-06,4329
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled + wave FE",TRUE,FALSE,0.498230607794255,0.142773026187294,0.000483619102768521,4329
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.132256656481885,0.0847454485301667,0.118833350062716,3478
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0901417642974072,0.0848024998104122,0.287980675807347,3478
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.101164593863631,0.102080228830292,0.321877307349827,2724
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0876385936908776,0.0847733872575563,0.301406811559346,3478
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.0877760730239288,0.0845895754169631,0.299600706782073,3478
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.101303686270491,0.101782042387262,0.319797674167827,2724
+"results_binary","schoolwork_dissatisfaction","School-work dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.537622693661808,0.128785745028607,3.18176829963356e-05,1319
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.490518560461043,0.129386285166561,0.000156764767850357,1319
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.347485704966703,0.19616651960711,0.0770214698819525,613
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave l",FALSE,FALSE,1.04171879025294,0.954856589178921,0.275286591683506,613
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.470204830804679,0.114180881431539,4.0434126584377e-05,1406
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.399612137000809,0.113153085149048,0.000426440812330453,1405
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.105928088751741,0.122009806761757,0.3854435524498,1376
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave m",FALSE,FALSE,0.456533550907227,0.224048223345769,0.0415841936026214,1376
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.543526110583013,0.149398883753857,0.000285630881888341,1278
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.486851292584811,0.151209075818715,0.00131552358955532,1278
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.275359009313025,0.154310187437974,0.0746027332926696,1234
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave n",FALSE,FALSE,0.308087913832546,0.482330885405355,0.522986846952861,1234
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.638984652835836,0.158004136144723,5.60753505306508e-05,1136
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.568532508994234,0.157738481535477,0.000326637885910159,1136
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,0.172816147108132,0.170786965617296,0.311825480122046,1093
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave o",FALSE,FALSE,-0.209164177490196,0.65881675121966,0.750875917470627,1093
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.536059602105268,0.0744908354274276,7.07754711217247e-13,5139
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.472702107085022,0.0742369006276419,2.08895657802616e-10,5138
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.191786346172168,0.080939646211382,0.0178563263205832,4316
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled",FALSE,FALSE,0.348950193878249,0.164596711172758,0.0340033984506772,4316
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.540468276191642,0.0740219305002364,3.28277228591359e-13,5139
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.477378655643453,0.0736879588603337,1.01381404671694e-10,5138
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.20678234990841,0.0803695717125533,0.0101186139073054,4316
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled + wave FE",TRUE,FALSE,0.358809405707786,0.152096964241477,0.0183201437567272,4316
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.171717171717171,0.0946049272478409,0.0697209959347935,3462
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0765446450071149,0.0902568744870464,0.396539655128949,3462
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.0337955576094576,0.104436034510335,0.746299058411614,2709
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0770460033343838,0.0899508126674752,0.391847356182176,3462
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.0770763676953894,0.089918935307573,0.391492992752057,3462
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.0337359612809581,0.103934557427277,0.745551314599028,2709
+"results_binary","school_dissatisfaction","School dissatisfaction","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA

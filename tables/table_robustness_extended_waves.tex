@@ -1,0 +1,43 @@
+\begin{table}[!htbp]
+\centering
+\caption{Wave coverage, controls, and paired all-wave DML comparisons}
+\label{tab:robustness_extended_waves}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccccc}
+\hline
+Specification & Fixed effects & Elastic net & Lasso & Random forest & Neural net
+\\
+\hline
+\multicolumn{6}{l}{\textit{Panel A: Ordered-treatment FE versus PLR-DML}} \\
+Waves l--o, rich controls & 0.030 & 0.057* & 0.062** & 0.056* & 0.029
+\\
+ & (0.041) & (0.029) & (0.029) & (0.029) & (0.029)
+\\
+Waves l--o, common-core controls & 0.035 & 0.065** & 0.068** & 0.054** & 0.053*
+\\
+ & (0.036) & (0.027) & (0.028) & (0.027) & (0.028)
+\\
+Waves a--o, common-core controls & 0.079*** & 0.116*** & 0.115*** & 0.112*** & 0.107***
+\\
+ & (0.011) & (0.009) & (0.009) & (0.009) & (0.009)
+\\
+$t$-statistic, Waves a--o & -- & -3.728 & -3.651 & -3.285 & -2.753
+\\
+$p$-value, Waves a--o & -- & $<0.001$ & $<0.001$ & 0.001 & 0.006
+\\[0.5ex]
+\multicolumn{6}{l}{\textit{Panel B: Binary-treatment FE versus IRM-DML}} \\
+Waves a--o, high weekday use & 0.167*** & 0.285*** & 0.289*** & 0.240*** & --
+\\
+ & (0.025) & (0.032) & (0.032) & (0.040) & --
+\\
+$t$-statistic & -- & -3.741 & -3.904 & -1.835 & --
+\\
+$p$-value & -- & $<0.001$ & $<0.001$ & 0.066 & --
+\\
+\hline
+\end{tabular*}
+\begin{minipage}{0.97\textwidth}
+\footnotesize Notes: Standard errors are reported in parentheses below the coefficients. Panel A preserves the control-set and wave-coverage comparison and reports paired tests for the Waves a--o common-core specification. Panel B uses the same all-wave sample and defines high weekday use as at least four hours. The neural-net IRM is not reported. Standard errors of the paired differences use 500 paired respondent-cluster influence-function bootstrap draws. The Waves l--o rich-control sample contains $N=4,316$, the Waves l--o common-core sample contains $N=5,001$, and the Waves a--o common-core sample contains $N=33,184$ person-wave observations. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

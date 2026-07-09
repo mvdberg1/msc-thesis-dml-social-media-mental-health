@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\caption{Preliminary partially linear estimates for Life dissatisfaction}
+\label{tab:prelim_ols_life_dissatisfaction}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\hline
+ & \multicolumn{4}{c}{Wave-specific OLS} & \multicolumn{2}{c}{Pooled OLS} & \multicolumn{2}{c}{Within-respondent FE} \\
+\cline{2-5} \cline{6-7} \cline{8-9}
+Specification & l & m & n & o & No wave FE & + wave FE & No wave FE & + wave FE \\
+\hline
+Bivariate & 0.243*** (0.048) & 0.186*** (0.048) & 0.184*** (0.046) & 0.084 (0.053) & 0.179*** (0.027) & 0.178*** (0.027) & 0.075** (0.035) & 0.033 (0.035)
+\\
++ Basic controls & 0.207*** (0.047) & 0.147*** (0.048) & 0.153*** (0.045) & 0.066 (0.053) & 0.147*** (0.026) & 0.147*** (0.026) & 0.035 (0.035) & 0.033 (0.035)
+\\
++ Rich controls & 0.209*** (0.078) & 0.035 (0.050) & 0.075 (0.048) & -0.052 (0.057) & 0.056* (0.029) & 0.057** (0.029) & 0.032 (0.041) & 0.030 (0.041)
+\\
+DML PLR (+ rich controls) & 0.178** (0.075) & 0.028 (0.049) & 0.106** (0.046) & -0.043 (0.056) & 0.065** (0.029) & 0.067** (0.029) &  & 
+\\
+\hline
+\end{tabular}
+}
+\begin{minipage}{0.95\textwidth}
+\footnotesize Notes: cells report the coefficient on weekday social-media use with standard errors in parentheses. The first three rows are linear specifications; wave-specific and pooled columns use OLS, while the last two columns use within-respondent fixed effects. Wave-specific OLS columns use HC1 robust standard errors; pooled OLS and within-FE columns cluster standard errors at the respondent level. The DML row uses DoubleMLPLR with partialling out, 5-fold cross-fitting, and \\texttt{regr.ranger} nuisance learners. Pooled DML columns use respondent clustering via \\texttt{DoubleMLClusterData}; DML with respondent fixed effects is not yet reported and those cells are left blank. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

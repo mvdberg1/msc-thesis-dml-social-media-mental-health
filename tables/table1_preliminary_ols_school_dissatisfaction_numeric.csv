@@ -1,0 +1,33 @@
+"outcome","outcome_label","treatment","specification","estimator","sample","wave_fe","respondent_fe","estimate","std_error","p_value","n"
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.184700898929054,0.0540942323338073,0.000658588857155494,1319
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.145408855576487,0.0545688854226608,0.00780033874747674,1319
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.0470300388221124,0.084589947701147,0.57844083107754,613
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Wave l",FALSE,FALSE,0.0647934974753993,0.0856232782758985,0.449213078689407,613
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.169717663603755,0.0522630874390824,0.00119227496397743,1406
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.121835641633795,0.0518956157521179,0.0190279277940687,1405
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.0156799534818293,0.0566948773385364,0.782154842228495,1376
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Wave m",FALSE,FALSE,0.0701720085568257,0.0554426905334529,0.205632167759855,1376
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.264471026903424,0.05884861854624,7.6203335198576e-06,1278
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.223056417541299,0.0598513218290179,0.000202389382758924,1278
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.171880239555275,0.063108234740516,0.00655149659513864,1234
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Wave n",FALSE,FALSE,0.174148498168782,0.0627719959927278,0.00553202320305056,1234
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.234794797350266,0.0658666128307786,0.000379430125909245,1136
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.210688658114676,0.0663614749237633,0.0015395077837723,1136
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,0.0474938533100458,0.0741884673638694,0.522194851215639,1093
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Wave o",FALSE,FALSE,0.0424396285204838,0.0706276220697125,0.547911399085007,1093
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.210074562507472,0.0315664954830061,3.1286510565342e-11,5139
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.169228847785431,0.0317990431564802,1.07100020686493e-07,5138
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.0714967720462026,0.035108804332365,0.0417681576413946,4316
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Pooled",FALSE,FALSE,0.091168788626481,0.0348532290908585,0.00890208369978329,4316
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.211680768506885,0.0314273404371114,1.81195658436509e-11,5139
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.170888877001854,0.0315958451017356,6.64039922424108e-08,5138
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.0770628568279086,0.0347711287979551,0.0267241377143184,4316
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Pooled + wave FE",TRUE,FALSE,0.089931324858307,0.0347501555902394,0.00965517388220262,4316
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.0924264351181867,0.0438888917935409,0.0353875718174859,3462
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0121314840013089,0.0420694699734176,0.773107473395129,3462
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.0137986482697538,0.0495478278476254,0.780684948145893,2709
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0114838068931682,0.0421979262893183,0.785553009523644,3462
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.011300928907917,0.0421776770805829,0.788787519216096,3462
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.012651864132166,0.0499232578734313,0.799983944577717,2709
+"school_dissatisfaction","School dissatisfaction","social_media_weekday","DML PLR (+ rich controls)","dml_plr","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA

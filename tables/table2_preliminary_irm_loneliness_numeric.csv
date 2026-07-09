@@ -1,0 +1,33 @@
+"outcome","outcome_label","treatment","specification","estimator","sample","wave_fe","respondent_fe","estimate","std_error","p_value","n"
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave l",FALSE,FALSE,0.238416902905745,0.0755037597227786,0.00166689619175352,627
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave l",FALSE,FALSE,0.218078556264992,0.0730600301936285,0.0029476925823053,627
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave l",FALSE,FALSE,0.148226704660368,0.0798106103414285,0.063783303008433,614
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave l",FALSE,FALSE,0.0615405639951232,0.254201439600674,0.80870756903978,614
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave m",FALSE,FALSE,0.171926611249397,0.0467762541609544,0.000246300958176022,1408
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave m",FALSE,FALSE,0.157663036206552,0.0460497037210679,0.000635411696100846,1407
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave m",FALSE,FALSE,0.0864704877406103,0.0499878361097194,0.0838899583608556,1377
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave m",FALSE,FALSE,0.234316784461503,0.0968672027452639,0.0155654394888358,1377
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave n",FALSE,FALSE,0.0981662745757028,0.0484063812903067,0.0427749185897016,1258
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave n",FALSE,FALSE,0.0940223570200978,0.0471268771322751,0.046249166594936,1258
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave n",FALSE,FALSE,0.024955763623658,0.0494143945360084,0.613631502893586,1218
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave n",FALSE,FALSE,-0.0934117483030725,0.0887100837320518,0.292340836396994,1218
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Wave o",FALSE,FALSE,0.108616755107089,0.054549127914712,0.0467025363540672,1131
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Wave o",FALSE,FALSE,0.101378443637619,0.0528021189006872,0.0551139760756596,1131
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Wave o",FALSE,FALSE,-0.0141762271925844,0.0583528083194545,0.808099066445671,1089
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Wave o",FALSE,FALSE,-0.124128750318846,0.17003712535698,0.465384257434881,1089
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Pooled",FALSE,FALSE,0.144847084448539,0.0289307407359338,5.75304246476318e-07,4424
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Pooled",FALSE,FALSE,0.134720023459884,0.027972832984396,1.51286830999554e-06,4423
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Pooled",FALSE,FALSE,0.0598541040110643,0.0287269216352758,0.0372601196645742,4298
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled",FALSE,FALSE,0.0265453725930408,0.0456083780602845,0.560547532491089,4298
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","ols","Pooled + wave FE",TRUE,FALSE,0.144707726668686,0.0289342471081313,5.91649020035663e-07,4424
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","ols","Pooled + wave FE",TRUE,FALSE,0.134729126879875,0.0279753097224753,1.51366336066838e-06,4423
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","ols","Pooled + wave FE",TRUE,FALSE,0.0604815555652557,0.0287215946189801,0.0352812182863709,4298
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Pooled + wave FE",TRUE,FALSE,0.0258671546072516,0.0439592276412692,0.556240251865876,4298
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","fe","Within FE",FALSE,TRUE,0.0793928779918271,0.039962675918909,0.0471895150267669,2777
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","fe","Within FE",FALSE,TRUE,0.0689149934377363,0.0398986547567268,0.0843844863150758,2777
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","fe","Within FE",FALSE,TRUE,0.0663914990082914,0.0406377293540275,0.102588046964675,2689
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE",FALSE,TRUE,NA,NA,NA,NA
+"loneliness","Loneliness","high_social_media_weekday","Bivariate","fe","Within FE + wave FE",TRUE,TRUE,0.0691829064032872,0.0399506474906695,0.0835869099855806,2777
+"loneliness","Loneliness","high_social_media_weekday","+ Basic controls","fe","Within FE + wave FE",TRUE,TRUE,0.0688529451435606,0.0399329146957517,0.0849310926231681,2777
+"loneliness","Loneliness","high_social_media_weekday","+ Rich controls","fe","Within FE + wave FE",TRUE,TRUE,0.0663754652102269,0.0406483610014206,0.102760813721588,2689
+"loneliness","Loneliness","high_social_media_weekday","DML IRM ATE (+ rich controls)","dml_irm","Within FE + wave FE",TRUE,TRUE,NA,NA,NA,NA

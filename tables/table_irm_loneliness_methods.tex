@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering
+\caption{Interactive regression model double machine learning estimates for loneliness across nuisance learners}
+\label{tab:irm_loneliness_methods}
+\begin{tabular}{lccc}
+\hline
+Variable & Elastic net & Lasso & Random forest
+\\
+\hline
+High social-media use & 0.057 & 0.055 & 0.041
+\\
+ & (0.069) & (0.053) & (0.038)
+\\
+N & 4,298 & 4,298 & 4,298
+\\
+\hline
+\end{tabular}
+\begin{minipage}{0.95\textwidth}
+\footnotesize Notes: All columns report pooled double machine learning average treatment effect estimates from the interactive regression model for the binary indicator of at least four hours of weekday social-media use. The same common outcome-specific sample with rich controls is used throughout, and wave fixed effects are included among the controls. Elastic net uses alpha = 0.5, while Lasso uses alpha = 1 for both the outcome and propensity nuisances. The interactive-regression comparison is restricted to Elastic net, Lasso, and Random forest because these were the learners that remained numerically stable in the binary-treatment setting. Standard errors come from respondent-clustered DoubleML inference with 5-fold cross-fitting. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[!htbp]
+\centering
+\caption{Preliminary partially linear estimates for School-work dissatisfaction}
+\label{tab:prelim_ols_schoolwork_dissatisfaction}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\hline
+ & \multicolumn{4}{c}{Wave-specific OLS} & \multicolumn{2}{c}{Pooled OLS} & \multicolumn{2}{c}{Within-respondent FE} \\
+\cline{2-5} \cline{6-7} \cline{8-9}
+Specification & l & m & n & o & No wave FE & + wave FE & No wave FE & + wave FE \\
+\hline
+Bivariate & 0.208*** (0.049) & 0.208*** (0.047) & 0.225*** (0.051) & 0.176*** (0.062) & 0.205*** (0.028) & 0.206*** (0.028) & 0.049 (0.039) & 0.010 (0.039)
+\\
++ Basic controls & 0.199*** (0.049) & 0.194*** (0.048) & 0.227*** (0.052) & 0.183*** (0.062) & 0.200*** (0.028) & 0.201*** (0.028) & 0.014 (0.039) & 0.010 (0.039)
+\\
++ Rich controls & 0.131 (0.085) & 0.146*** (0.054) & 0.139** (0.060) & 0.048 (0.069) & 0.116*** (0.033) & 0.119*** (0.033) & 0.052 (0.045) & 0.051 (0.045)
+\\
+DML PLR (+ rich controls) & 0.115 (0.083) & 0.181*** (0.053) & 0.130** (0.058) & 0.070 (0.067) & 0.120*** (0.033) & 0.122*** (0.033) &  & 
+\\
+\hline
+\end{tabular}
+}
+\begin{minipage}{0.95\textwidth}
+\footnotesize Notes: cells report the coefficient on weekday social-media use with standard errors in parentheses. The first three rows are linear specifications; wave-specific and pooled columns use OLS, while the last two columns use within-respondent fixed effects. Wave-specific OLS columns use HC1 robust standard errors; pooled OLS and within-FE columns cluster standard errors at the respondent level. The DML row uses DoubleMLPLR with partialling out, 5-fold cross-fitting, and \\texttt{regr.ranger} nuisance learners. Pooled DML columns use respondent clustering via \\texttt{DoubleMLClusterData}; DML with respondent fixed effects is not yet reported and those cells are left blank. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

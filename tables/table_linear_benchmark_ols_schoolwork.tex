@@ -1,0 +1,53 @@
+\begin{table}[!htbp]
+\centering
+\caption{Linear model estimates for school-work dissatisfaction}
+\label{tab:linear_models_schoolwork}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{p{0.34\textwidth}cccccc}
+\hline
+Variable & (1) & (2) & (3) & (4) & (5) & (6) \\
+\hline
+Weekday social-media use & \shortstack[c]{0.204*** \\[-0.35ex] (0.030)} & \shortstack[c]{0.199*** \\[-0.35ex] (0.031)} & \shortstack[c]{0.116*** \\[-0.35ex] (0.033)} & \shortstack[c]{0.052 \\[-0.35ex] (0.045)} & \shortstack[c]{0.051 \\[-0.35ex] (0.045)} & \shortstack[c]{0.103*** \\[-0.35ex] (0.031)}
+\\
+Age &  & \shortstack[c]{0.022 \\[-0.35ex] (0.015)} & \shortstack[c]{-0.000 \\[-0.35ex] (0.015)} & \shortstack[c]{0.126*** \\[-0.35ex] (0.028)} & \shortstack[c]{-0.193 \\[-0.35ex] (0.136)} & \shortstack[c]{0.029** \\[-0.35ex] (0.014)}
+\\
+Female &  & \shortstack[c]{0.215*** \\[-0.35ex] (0.051)} & \shortstack[c]{0.239*** \\[-0.35ex] (0.054)} &  &  & \shortstack[c]{0.224*** \\[-0.35ex] (0.053)}
+\\
+Urban area &  & \shortstack[c]{-0.048 \\[-0.35ex] (0.060)} & \shortstack[c]{-0.061 \\[-0.35ex] (0.063)} & \shortstack[c]{0.175 \\[-0.35ex] (0.382)} & \shortstack[c]{0.117 \\[-0.35ex] (0.390)} & \shortstack[c]{-0.070 \\[-0.35ex] (0.063)}
+\\
+Close friends &  &  & \shortstack[c]{-0.177*** \\[-0.35ex] (0.040)} & \shortstack[c]{0.028 \\[-0.35ex] (0.064)} & \shortstack[c]{0.025 \\[-0.35ex] (0.064)} & \shortstack[c]{-0.118*** \\[-0.35ex] (0.039)}
+\\
+Parents/step-parents in household &  &  & \shortstack[c]{-0.186*** \\[-0.35ex] (0.061)} & \shortstack[c]{-0.331** \\[-0.35ex] (0.165)} & \shortstack[c]{-0.324** \\[-0.35ex] (0.163)} & \shortstack[c]{-0.226*** \\[-0.35ex] (0.060)}
+\\
+Grandparents in household &  &  & \shortstack[c]{-0.021 \\[-0.35ex] (0.098)} & \shortstack[c]{0.499 \\[-0.35ex] (0.507)} & \shortstack[c]{0.495 \\[-0.35ex] (0.507)} & \shortstack[c]{-0.022 \\[-0.35ex] (0.103)}
+\\
+Siblings/step-siblings in household &  &  & \shortstack[c]{0.011 \\[-0.35ex] (0.026)} & \shortstack[c]{0.102 \\[-0.35ex] (0.152)} & \shortstack[c]{0.109 \\[-0.35ex] (0.159)} & \shortstack[c]{0.021 \\[-0.35ex] (0.026)}
+\\
+Family meals &  &  & \shortstack[c]{-0.187*** \\[-0.35ex] (0.026)} & \shortstack[c]{-0.098** \\[-0.35ex] (0.049)} & \shortstack[c]{-0.091* \\[-0.35ex] (0.049)} & \shortstack[c]{-0.179*** \\[-0.35ex] (0.025)}
+\\
+Television/video hours &  &  & \shortstack[c]{0.146*** \\[-0.35ex] (0.041)} & \shortstack[c]{-0.010 \\[-0.35ex] (0.055)} & \shortstack[c]{-0.012 \\[-0.35ex] (0.055)} & \shortstack[c]{0.097*** \\[-0.35ex] (0.036)}
+\\
+Smartphone &  &  & \shortstack[c]{-0.078 \\[-0.35ex] (0.080)} & \shortstack[c]{0.018 \\[-0.35ex] (0.114)} & \shortstack[c]{0.017 \\[-0.35ex] (0.114)} & \shortstack[c]{-0.055 \\[-0.35ex] (0.076)}
+\\
+Tablet &  &  & \shortstack[c]{-0.111** \\[-0.35ex] (0.048)} & \shortstack[c]{0.080 \\[-0.35ex] (0.076)} & \shortstack[c]{0.073 \\[-0.35ex] (0.076)} & \shortstack[c]{-0.078* \\[-0.35ex] (0.046)}
+\\
+Gaming console &  &  & \shortstack[c]{0.128** \\[-0.35ex] (0.058)} & \shortstack[c]{-0.043 \\[-0.35ex] (0.092)} & \shortstack[c]{-0.036 \\[-0.35ex] (0.092)} & \shortstack[c]{0.087 \\[-0.35ex] (0.054)}
+\\
+Laptop/desktop computer &  &  & \shortstack[c]{-0.070 \\[-0.35ex] (0.060)} & \shortstack[c]{-0.187** \\[-0.35ex] (0.081)} & \shortstack[c]{-0.182** \\[-0.35ex] (0.081)} & \shortstack[c]{-0.099* \\[-0.35ex] (0.055)}
+\\
+\hline
+Model & Bivariate & Basic & Rich pooled & FE & FE + wave & RE
+\\
+$R^2$ & 0.014 & 0.020 & 0.073 & 0.038 & 0.042 & 0.128
+\\
+N & 4,329 & 4,329 & 4,329 & 4,329 & 4,329 & 4,329
+\\
+\hline
+\end{tabular}
+\renewcommand{\arraystretch}{1}
+\begin{minipage}{0.97\textwidth}
+\footnotesize Notes: All columns use the same common outcome-specific sample and report respondent-clustered standard errors in parentheses below the coefficient. Column (1) is a bivariate pooled OLS model. Column (2) adds age, female, and urban-area controls. Column (3) adds the rich baseline control set in a standard pooled linear regression. Column (4) is a fixed-effects model with rich controls and individual intercepts. Column (5) adds wave fixed effects to the fixed-effects model. Column (6) is a random-effects model with rich controls. Blank cells indicate covariates that are absorbed by individual fixed effects or otherwise not identified in a given specification. The rich-control models also include broad ethnicity and region dummies, which are omitted from display for compactness. The row labeled Close friends refers to the logged control \texttt{log(1 + close\_friends)} used in the regressions. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

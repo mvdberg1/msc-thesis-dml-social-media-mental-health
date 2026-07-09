@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\centering
+\caption{Panel-model comparison and specification tests}
+\label{tab:panel_model_tests}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\hline
+Model or test & Life dissatisfaction & Loneliness & School-work dissatisfaction & School dissatisfaction
+\\
+\hline
+Pooled classical linear regression model & 0.056* (0.029) & 0.022* (0.013) & 0.116*** (0.033) & 0.071** (0.035)
+\\
+Fixed effects model & 0.030 (0.041) & 0.042** (0.020) & 0.051 (0.045) & 0.013 (0.050)
+\\
+Random effects model & 0.056** (0.027) & 0.030** (0.012) & 0.103*** (0.031) & 0.060* (0.033)
+\\
+F test p-value & $< 0.001$ & $< 0.001$ & $< 0.001$ & $< 0.001$
+\\
+LM test p-value & $< 0.001$ & $< 0.001$ & $< 0.001$ & $< 0.001$
+\\
+Hausman p-value & 0.046 & $< 0.001$ & $< 0.001$ & $< 0.001$
+\\
+N & 4,316 & 4,298 & 4,329 & 4,316
+\\
+\hline
+\end{tabular}
+}
+\begin{minipage}{0.95\textwidth}
+\footnotesize Notes: The first three rows reproduce the weekday social-media coefficient from the outcome-specific linear-results tables, specifically columns (3), (5), and (6). All rows use the same outcome-specific estimation samples as those tables. Robust standard errors are clustered at the respondent level. The F test evaluates the pooled-versus-fixed-effects comparison on the matched rich-control specifications without wave dummies. The Breusch-Pagan LM test evaluates the pooled-versus-random-effects comparison for the matched rich-control specifications, using the unbalanced-panel implementation in \texttt{plm}. The Hausman test evaluates the fixed-versus-random-effects comparison on the matched rich-control specifications without wave dummies. Small p-values therefore reject the simpler or stronger-assumption model in favour of the more flexible alternative. Significance: *** \(p < 0.01\), ** \(p < 0.05\), * \(p < 0.10\).
+\end{minipage}
+\end{table}

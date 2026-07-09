@@ -1,0 +1,4 @@
+"framework","outcome","treatment","learner","estimate","std_error","p_value","n"
+"IRM","school_dissatisfaction","high_social_media_weekday","Elastic net",0.298815624466967,0.166326335774703,0.0724051338560169,4316
+"IRM","school_dissatisfaction","high_social_media_weekday","Lasso",0.308462588427793,0.169113357231287,0.0681522288272134,4316
+"IRM","school_dissatisfaction","high_social_media_weekday","Random forest",0.416653904987397,0.143243897295791,0.00362931861749633,4316

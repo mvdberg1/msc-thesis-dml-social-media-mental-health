@@ -1,0 +1,97 @@
+"outcome","outcome_label","row_label","specification","estimate","std_error","p_value","n"
+"loneliness","Loneliness","Weekday social-media use","(1)",0.0583308667012839,0.012464506781872,2.96055264121107e-06,4298
+"loneliness","Loneliness","Weekday social-media use","(2)",0.0534789958573375,0.0122142396987506,1.2239120923834e-05,4298
+"loneliness","Loneliness","Weekday social-media use","(3)",0.0213151821377048,0.012527918627599,0.0889378845466032,4298
+"loneliness","Loneliness","Weekday social-media use","(4)",0.0214573349591549,0.0125263290096702,0.0867889976664857,4298
+"loneliness","Loneliness","Age","(1)",NA,NA,NA,4298
+"loneliness","Loneliness","Age","(2)",0.0251483761410485,0.00566844855903104,9.36995932232727e-06,4298
+"loneliness","Loneliness","Age","(3)",0.0131836464568609,0.00578873269136738,0.0228075232628802,4298
+"loneliness","Loneliness","Age","(4)",0.0130041523595272,0.00582180228713148,0.0255544541001694,4298
+"loneliness","Loneliness","Female","(1)",NA,NA,NA,4298
+"loneliness","Loneliness","Female","(2)",0.233005114134359,0.0205443360276564,2.13107677588095e-29,4298
+"loneliness","Loneliness","Female","(3)",0.205996619683363,0.0212424362410344,5.20375599008982e-22,4298
+"loneliness","Loneliness","Female","(4)",0.205784523158371,0.0212650519965117,6.32210893463998e-22,4298
+"loneliness","Loneliness","Log(1 + close friends)","(1)",NA,NA,NA,4298
+"loneliness","Loneliness","Log(1 + close friends)","(2)",NA,NA,NA,4298
+"loneliness","Loneliness","Log(1 + close friends)","(3)",-0.178353070757467,0.0163045732770351,1.73322841494993e-27,4298
+"loneliness","Loneliness","Log(1 + close friends)","(4)",-0.179338275596292,0.0163638815857203,1.3906833463561e-27,4298
+"loneliness","Loneliness","Family meal frequency","(1)",NA,NA,NA,4298
+"loneliness","Loneliness","Family meal frequency","(2)",NA,NA,NA,4298
+"loneliness","Loneliness","Family meal frequency","(3)",-0.0528878792608503,0.0107004556079824,8.00456931234743e-07,4298
+"loneliness","Loneliness","Family meal frequency","(4)",-0.0525328992288389,0.0107279667537966,1.00998576355024e-06,4298
+"loneliness","Loneliness","TV/video time","(1)",NA,NA,NA,4298
+"loneliness","Loneliness","TV/video time","(2)",NA,NA,NA,4298
+"loneliness","Loneliness","TV/video time","(3)",0.079892849392039,0.0150757129184418,1.22008380518236e-07,4298
+"loneliness","Loneliness","TV/video time","(4)",0.0799553994582424,0.0150758151577647,1.19311482780658e-07,4298
+"life_dissatisfaction","Life dissatisfaction","Weekday social-media use","(1)",0.172348521977375,0.0289952554620823,3.00061059338067e-09,4316
+"life_dissatisfaction","Life dissatisfaction","Weekday social-media use","(2)",0.144371991317235,0.0284785182724241,4.15573086250308e-07,4316
+"life_dissatisfaction","Life dissatisfaction","Weekday social-media use","(3)",0.0594368608879058,0.0288576165336742,0.0394912604781211,4316
+"life_dissatisfaction","Life dissatisfaction","Weekday social-media use","(4)",0.0602037910751268,0.0288772039466721,0.0371445633738185,4316
+"life_dissatisfaction","Life dissatisfaction","Age","(1)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","Age","(2)",0.120762210054367,0.0125894697307677,1.41219027096107e-21,4316
+"life_dissatisfaction","Life dissatisfaction","Age","(3)",0.097697267479189,0.013068734407898,9.25918893250023e-14,4316
+"life_dissatisfaction","Life dissatisfaction","Age","(4)",0.09793551960527,0.0131136449829857,9.79161343846786e-14,4316
+"life_dissatisfaction","Life dissatisfaction","Female","(1)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","Female","(2)",0.42310303841319,0.0461776804419177,7.66360481858866e-20,4316
+"life_dissatisfaction","Life dissatisfaction","Female","(3)",0.385709856598939,0.0491915457470391,5.59875800378334e-15,4316
+"life_dissatisfaction","Life dissatisfaction","Female","(4)",0.386055799740698,0.049244427077288,5.66130136480378e-15,4316
+"life_dissatisfaction","Life dissatisfaction","Log(1 + close friends)","(1)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","Log(1 + close friends)","(2)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","Log(1 + close friends)","(3)",-0.31535990183225,0.0355391721179091,1.02094573093835e-18,4316
+"life_dissatisfaction","Life dissatisfaction","Log(1 + close friends)","(4)",-0.31642109089208,0.0357060759067716,1.13274723860138e-18,4316
+"life_dissatisfaction","Life dissatisfaction","Family meal frequency","(1)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","Family meal frequency","(2)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","Family meal frequency","(3)",-0.176010846844091,0.0230161374671749,2.51738215434683e-14,4316
+"life_dissatisfaction","Life dissatisfaction","Family meal frequency","(4)",-0.175706724914723,0.0230603926485983,3.11644319550047e-14,4316
+"life_dissatisfaction","Life dissatisfaction","TV/video time","(1)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","TV/video time","(2)",NA,NA,NA,4316
+"life_dissatisfaction","Life dissatisfaction","TV/video time","(3)",0.19976894722331,0.0337550675345999,3.50870445926444e-09,4316
+"life_dissatisfaction","Life dissatisfaction","TV/video time","(4)",0.19945121279428,0.0337491608842134,3.69058391100094e-09,4316
+"schoolwork_dissatisfaction","School-work dissatisfaction","Weekday social-media use","(1)",0.203807670026494,0.0302023143729298,1.69617293276564e-11,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Weekday social-media use","(2)",0.199990360831063,0.0306679526088932,7.7780919792985e-11,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Weekday social-media use","(3)",0.119959929780957,0.0328730095364464,0.000266183485162981,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Weekday social-media use","(4)",0.123000251671517,0.0326446429294938,0.000166859988283246,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Age","(1)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Age","(2)",0.0217968849662373,0.0146376332800303,0.136534215050763,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Age","(3)",0.00186822100407246,0.0152197165983561,0.902310754885648,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Age","(4)",0.000455961572963444,0.0152520891529613,0.976152160341025,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Female","(1)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Female","(2)",0.214257052725753,0.0512471517458667,2.96157020934711e-05,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Female","(3)",0.239970277594141,0.0543782894402524,1.04451190136597e-05,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Female","(4)",0.237803829525703,0.0542253405308011,1.1849834092202e-05,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Log(1 + close friends)","(1)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Log(1 + close friends)","(2)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Log(1 + close friends)","(3)",-0.186256300716746,0.0401717978673244,3.64862141935788e-06,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Log(1 + close friends)","(4)",-0.19974912694295,0.0400079229346617,6.18838927920851e-07,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Family meal frequency","(1)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Family meal frequency","(2)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Family meal frequency","(3)",-0.189608665311738,0.0258351019984162,2.5552570885696e-13,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","Family meal frequency","(4)",-0.184567660191116,0.0258518184441353,1.09480918110827e-12,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","TV/video time","(1)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","TV/video time","(2)",NA,NA,NA,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","TV/video time","(3)",0.146637335532029,0.0409539006325214,0.000346659557500105,4329
+"schoolwork_dissatisfaction","School-work dissatisfaction","TV/video time","(4)",0.14723742609118,0.0408890710523478,0.000320694976935531,4329
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(1)",0.210291827801025,0.0332638699316624,2.84505693671692e-10,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(2)",0.171164487896657,0.0333501407484089,2.9874406877331e-07,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(3)",0.0741899128020076,0.0350826343983386,0.0345113714666159,4316
+"school_dissatisfaction","School dissatisfaction","Weekday social-media use","(4)",0.0794027516532038,0.0347476077788282,0.0223538615181569,4316
+"school_dissatisfaction","School dissatisfaction","Age","(1)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Age","(2)",0.158330772077782,0.0152018281870089,4.1839796914553e-25,4316
+"school_dissatisfaction","School dissatisfaction","Age","(3)",0.135281521308499,0.0156936928991769,9.26922179332891e-18,4316
+"school_dissatisfaction","School dissatisfaction","Age","(4)",0.132942691208406,0.015628174955796,2.44191929208406e-17,4316
+"school_dissatisfaction","School dissatisfaction","Female","(1)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Female","(2)",0.276188732226963,0.0557151110555764,7.4277356603898e-07,4316
+"school_dissatisfaction","School dissatisfaction","Female","(3)",0.245167734022982,0.0578120874178642,2.2744296375393e-05,4316
+"school_dissatisfaction","School dissatisfaction","Female","(4)",0.24147992754219,0.05756214094246,2.78240794814745e-05,4316
+"school_dissatisfaction","School dissatisfaction","Log(1 + close friends)","(1)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Log(1 + close friends)","(2)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Log(1 + close friends)","(3)",-0.355402294989746,0.0438222284284732,6.53962728200128e-16,4316
+"school_dissatisfaction","School dissatisfaction","Log(1 + close friends)","(4)",-0.379515190920122,0.0434911825248904,3.70813793143356e-18,4316
+"school_dissatisfaction","School dissatisfaction","Family meal frequency","(1)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Family meal frequency","(2)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","Family meal frequency","(3)",-0.204446656213917,0.0285631488313752,9.60308832116368e-13,4316
+"school_dissatisfaction","School dissatisfaction","Family meal frequency","(4)",-0.195999382273339,0.0285167911817148,7.18541319424138e-12,4316
+"school_dissatisfaction","School dissatisfaction","TV/video time","(1)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","TV/video time","(2)",NA,NA,NA,4316
+"school_dissatisfaction","School dissatisfaction","TV/video time","(3)",0.23004613779692,0.0402012272471672,1.12202706641973e-08,4316
+"school_dissatisfaction","School dissatisfaction","TV/video time","(4)",0.230628478215948,0.0398410615833309,7.59887013794936e-09,4316
