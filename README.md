@@ -1,6 +1,6 @@
 # Double Machine Learning for Social Media and Adolescent Mental Well-Being
 
-This repository contains a compact replication package for:
+This repository contains the replication package for:
 
 **Double Machine Learning for Estimating the Effects of Social Media Use on Mental Health**
 
@@ -8,11 +8,16 @@ Marloes van den Berg, MSc Econometrics, University of Amsterdam.
 
 ## Repository contents
 
-- `R/run_replication.R`: entry point for the compact replication workflow.
-- `R/thesis files/`: production scripts used for data construction and the main empirical estimates.
-- `R/core files/01_data_core.R`: compact Chapter 3 data and descriptive analysis code.
-- `R/core files/02_methodology_core.R`: compact Chapter 4 methodology-figure code.
-- `R/core files/03_results_core.R`: compact Chapter 5 main-results code.
+- `R/run_replication.R`: entry point for the ordered replication workflow.
+- `R/core files/`: the core scripts used to regenerate the tables and figures
+  referenced from the thesis text.
+  - `01_data_core.R`: data construction and Chapter 3 descriptives.
+  - `02_methodology_core.R`: Chapter 4 methodology figures.
+  - `03_dml_results_core.R`: pooled OLS, PLR-DML, and IRM-DML results.
+  - `04_linear_panel_core.R`: linear panel benchmarks and model tests.
+  - `05_prepare_core_inputs.R`: numeric inputs for comparisons and figures.
+  - `06_fe_dml_comparison_core.R` to `12_summary_figures_core.R`: paired
+    comparisons, robustness checks, and Chapter 5 summary figures.
 - `R/package_versions.csv`: R package versions used for the final analysis.
 - `REPLICATION.md`: step-by-step data and software instructions.
 
@@ -35,16 +40,16 @@ cleaning scripts then regenerate the local files under `data/analysis/`.
 
 ## Reproducibility
 
-The compact replication entry point is:
+The complete replication entry point is:
 
 ```sh
 Rscript R/run_replication.R core
 ```
 
-To rerun the production scripts that generated the main empirical tables:
+For a faster main-text check that skips the appendix robustness scripts:
 
 ```sh
-Rscript R/run_replication.R production
+Rscript R/run_replication.R main
 ```
 
 See `REPLICATION.md` for required software, directory structure, script order,

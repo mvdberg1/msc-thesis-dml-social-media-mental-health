@@ -5,8 +5,8 @@
 #    baseline sample based on UKHLS youth waves l--o.
 # 2. It shows how the DML setup is constructed: the causal diagram, learner
 #    workflow, nuisance tuning, orthogonalization idea, and bias simulation.
-# 3. All outputs are shown interactively in the console and plot pane, so the
-#    methodology can be explained step by step without exporting thesis files.
+# 3. The figures used in the thesis are written to figures/, while intermediate
+#    tables are printed to the console for inspection.
 
 library(haven)
 library(ggplot2)
@@ -27,6 +27,8 @@ root <- Sys.getenv(
     "ukhls"
   )
 )
+figures_dir <- file.path(project_dir, "figures")
+dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
 miss_codes <- c(-1, -2, -3, -4, -5, -6, -7, -8, -9)
 
 show_table <- function(title, x) {
@@ -41,6 +43,16 @@ show_table <- function(title, x) {
 show_plot <- function(title, plot_obj) {
   cat("\n", title, "\n", sep = "")
   print(plot_obj)
+}
+
+save_plot <- function(plot_obj, file_name, width = 8, height = 5, dpi = 320) {
+  ggsave(
+    filename = file.path(figures_dir, file_name),
+    plot = plot_obj,
+    width = width,
+    height = height,
+    dpi = dpi
+  )
 }
 
 read_wave <- function(w) {
@@ -491,17 +503,29 @@ show_table(
 )
 show_table("Methodology baseline sample preview (first 10 rows)", utils::head(baseline_df, 10))
 
-show_plot("Figure: causal diagram", make_causal_diagram())
-show_plot("Figure: learner workflow", make_learner_workflow_plot())
-show_plot("Figure: orthogonalization", make_orthogonalization_plot(baseline_df))
+causal_diagram <- make_causal_diagram()
+learner_workflow <- make_learner_workflow_plot()
+orthogonalization_plot <- make_orthogonalization_plot(baseline_df)
+glmnet_tuning_plot <- make_glmnet_tuning_plot(baseline_df)
+
+show_plot("Figure: causal diagram", causal_diagram)
+show_plot("Figure: learner workflow", learner_workflow)
+show_plot("Figure: orthogonalization", orthogonalization_plot)
 show_plot(
   "Figure: elastic-net tuning for weekday social-media use",
-  make_glmnet_tuning_plot(baseline_df)
+  glmnet_tuning_plot
 )
 
 bias_df <- make_bias_replications(baseline_df, n_rep = 150, beta0 = 0.08)
 show_table("Bias simulation preview (first 10 replications)", utils::head(bias_df, 10))
 show_table("Bias simulation summary", summarise_bias_methods(bias_df))
-show_plot("Figure: bias comparison", make_bias_comparison_plot(bias_df))
+bias_comparison_plot <- make_bias_comparison_plot(bias_df)
+show_plot("Figure: bias comparison", bias_comparison_plot)
 
-cat("\nMethodology core outputs were printed to the console and plot pane.\n")
+save_plot(causal_diagram, "causal_diagram_plr.png", width = 7.2, height = 3.1)
+save_plot(learner_workflow, "learner_workflow.png", width = 8.0, height = 4.6)
+save_plot(orthogonalization_plot, "orthogonalization_life.png", width = 8.0, height = 4.8)
+save_plot(glmnet_tuning_plot, "glmnet_tuning_ypnetcht.png", width = 8.0, height = 4.8)
+save_plot(bias_comparison_plot, "bias_comparison_life.png", width = 8.0, height = 3.8)
+
+cat("\nMethodology core figures were written to", figures_dir, "\n")

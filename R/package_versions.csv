@@ -10,6 +10,7 @@ ggplot2,4.0.2
 glmnet,4.1.10
 gridExtra,2.3
 haven,2.5.5
+lgr,0.5.2
 lmtest,0.9.40
 mlr3,1.5.0
 mlr3learners,0.14.0

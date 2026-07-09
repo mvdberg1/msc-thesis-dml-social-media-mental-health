@@ -24,15 +24,9 @@ BibTeXTemplate.bib
 GITHUB_STEPS.md
 SUBMISSION_CHECKLIST.md
 
-# Extended thesis-output scripts not included in the compact replication repo
-R/core files/03_prepare_core_inputs.R
-R/core files/04_fe_dml_comparison.R
-R/core files/05_fe_irm_comparison.R
-R/core files/06_robustness_design_checks.R
-R/core files/07_robustness_dml_diagnostics.R
-R/core files/08_weekend_fe_dml_comparison.R
-R/core files/09_robustness_paired_comparisons.R
-R/core files/10_results_summary_figure.R
+# Drafting scripts kept locally but not part of the GitHub replication package
+R/thesis files/
+R/core files/03_results_core.R
 
 # Local/generated temporary outputs
 figures/
@@ -68,7 +62,7 @@ figures/victor_chernozhukov.png
 *.synctex.gz
 *.toc
 
-# Keep final PDFs and source files trackable, but ignore old local drafts
+# Local drafts and proposal folders are not part of this replication package
 progress reports/
 research proposal/
 papers/

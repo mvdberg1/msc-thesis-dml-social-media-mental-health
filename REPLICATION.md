@@ -1,6 +1,6 @@
 # Replication Guide
 
-This repository contains the compact R replication package for the thesis
+This repository contains the core R replication package for the thesis
 analysis. It is not a full thesis archive: the submitted thesis PDF and LaTeX
 source are kept outside the GitHub repository. All commands below are run from
 the project root.
@@ -29,10 +29,11 @@ records the resulting wave and variable documentation under `data/analysis/`.
 
 The analysis was run with R 4.4 and the following principal packages:
 `DoubleML`, `mlr3`, `mlr3learners`, `data.table`, `dplyr`, `haven`, `plm`,
-`fixest`, `sandwich`, `lmtest`, `glmnet`, `ranger`, `nnet`, `ggplot2`, and
-`cowplot`. The exact versions used for the final analysis are recorded in
-`R/package_versions.csv`. A TeX installation with `latexmk` is needed to
-rebuild the PDF.
+`fixest`, `sandwich`, `lmtest`, `glmnet`, `ranger`, `nnet`, `future`, `lgr`,
+`ggplot2`, `gridExtra`, `cowplot`, `nlme`, `rpart`, and `scales`. The exact
+versions used for the final analysis are recorded in `R/package_versions.csv`.
+A TeX installation is only needed if the thesis PDF itself is rebuilt outside
+this replication repository.
 
 All stochastic DML folds, learners, simulations, and bootstrap procedures use
 fixed seeds in the corresponding scripts. Respondent identifiers, rather than
@@ -40,37 +41,44 @@ person-wave records, define folds and bootstrap clusters.
 
 ## Workflows
 
-The compact workflow rebuilds the cleaned analysis data and runs the
-chapter-oriented core scripts:
+The complete core workflow rebuilds the cleaned analysis data and regenerates
+the thesis tables and figures produced by the R scripts:
 
 ```sh
 Rscript R/run_replication.R core
 ```
 
-The production workflow reruns the original data-construction and main
-empirical-estimation scripts:
+For a faster main-text check that skips the appendix robustness scripts:
 
 ```sh
-Rscript R/run_replication.R production
+Rscript R/run_replication.R main
 ```
 
-The production workflow is slower because it re-estimates the Double Machine
-Learning learner comparisons and linear panel benchmarks. Random seeds and
-computational settings are fixed in the corresponding scripts.
+The complete workflow is slower because it re-estimates Double Machine
+Learning learner comparisons, paired bootstrap tests, and robustness checks.
+Random seeds and computational settings are fixed in the corresponding scripts.
 
 ## Script order
 
-1. `R/thesis files/01_clean_ukhls_youth.R` constructs the cleaned analysis data
-   from licensed UKHLS youth files.
-2. `R/core files/01_data_core.R` reproduces the Chapter 3 descriptive data
-   checks and figures in compact form.
-3. `R/core files/02_methodology_core.R` reproduces the Chapter 4 methodology
-   illustrations in compact form.
-4. `R/core files/03_results_core.R` reproduces the Chapter 5 main empirical
-   tables in compact form.
-5. In the optional production workflow, `R/thesis files/02_preliminary_ols.R`
-   and `R/thesis files/03_linear_panel_benchmarks.R` rerun the original DML and
-   linear panel estimation scripts used for the final thesis outputs.
+1. `R/core files/01_data_core.R` constructs the cleaned analysis data from
+   licensed UKHLS youth files and writes the Chapter 3 descriptive outputs.
+2. `R/core files/02_methodology_core.R` writes the Chapter 4 methodology
+   figures, including the PLR causal diagram and bias-comparison figure.
+3. `R/core files/03_dml_results_core.R` estimates the pooled OLS, PLR-DML, and
+   IRM-DML result tables.
+4. `R/core files/04_linear_panel_core.R` estimates the linear panel benchmarks,
+   panel-model tests, and panel schematic.
+5. `R/core files/05_prepare_core_inputs.R` prepares numeric inputs used by the
+   paired comparisons and summary figures.
+6. `R/core files/06_fe_dml_comparison_core.R` and
+   `R/core files/07_fe_irm_comparison_core.R` run the fixed-effects versus DML
+   paired comparisons. `R/run_replication.R core` repeats these scripts for all
+   four outcomes.
+7. `R/core files/08_robustness_design_core.R` to
+   `R/core files/11_robustness_paired_comparisons_core.R` run the robustness
+   checks used in the main text and appendix.
+8. `R/core files/12_summary_figures_core.R` writes the Chapter 5 summary
+   figures.
 
 Generated analysis data are stored locally under `data/analysis/`; numeric
 estimates under `tables/`; and figures under `figures/`. These generated

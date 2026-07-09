@@ -1,3 +1,8 @@
+# Chapter 5 linear and panel benchmark outputs.
+#
+# This script writes the linear benchmark tables, panel-model test table, and
+# panel-model schematic used in the thesis.
+
 library(dplyr)
 library(lmtest)
 library(sandwich)
@@ -6,9 +11,18 @@ library(nlme)
 library(ggplot2)
 library(gridExtra)
 
-data_path <- "data/analysis/ukhls_youth_l_to_o_clean.rds"
-tables_dir <- "tables"
-figures_dir <- "figures"
+project_dir <- normalizePath(
+  Sys.getenv("THESIS_PROJECT_DIR", unset = "."),
+  mustWork = TRUE
+)
+data_path <- file.path(
+  project_dir,
+  "data",
+  "analysis",
+  "ukhls_youth_l_to_o_clean.rds"
+)
+tables_dir <- file.path(project_dir, "tables")
+figures_dir <- file.path(project_dir, "figures")
 
 dir.create(tables_dir, recursive = TRUE, showWarnings = FALSE)
 dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
@@ -386,7 +400,7 @@ write_linear_model_table <- function(outcome_name, file_name, caption, label) {
 
   r2_values <- vapply(seq_along(models), function(j) model_fit_value(models[[j]], specs[[j]]), character(1))
   n_values <- vapply(models, function(model) format(nobs(model), big.mark = ","), character(1))
-  model_labels <- c("Bivariate", "Basic", "Rich pooled", "FE", "FE + wave", "RE")
+  model_labels <- c("Bivariate", "Basic", "Rich pooled", "FE", "TWFE", "RE")
 
   lines <- c(
     lines,
@@ -493,7 +507,7 @@ write_panel_tests_table <- function() {
 
   row_labels <- c(
     "Pooled classical linear regression model",
-    "Fixed effects model",
+    "Two-way fixed effects model",
     "Random effects model",
     "F test p-value",
     "LM test p-value",
@@ -578,7 +592,7 @@ write_panel_tests_table <- function() {
     "\\end{tabular}",
     "}",
     "\\begin{minipage}{0.95\\textwidth}",
-    "\\footnotesize Notes: The first three rows reproduce the weekday social-media coefficient from the outcome-specific linear-results tables, specifically columns (3), (5), and (6). All rows use the same outcome-specific estimation samples as those tables. Robust standard errors are clustered at the respondent level. The F test evaluates the pooled-versus-fixed-effects comparison on the matched rich-control specifications without wave dummies. The Breusch-Pagan LM test evaluates the pooled-versus-random-effects comparison for the matched rich-control specifications, using the unbalanced-panel implementation in \\texttt{plm}. The Hausman test evaluates the fixed-versus-random-effects comparison on the matched rich-control specifications without wave dummies. Small p-values therefore reject the simpler or stronger-assumption model in favour of the more flexible alternative. Significance: *** \\(p < 0.01\\), ** \\(p < 0.05\\), * \\(p < 0.10\\).",
+    "\\footnotesize Notes: The first three rows reproduce the weekday social-media coefficient from the outcome-specific linear-results tables, specifically columns (3), (5; TWFE), and (6). All rows use the same outcome-specific estimation samples as those tables. Robust standard errors are clustered at the respondent level. The F test evaluates the pooled-versus-fixed-effects comparison on the matched rich-control specifications without wave dummies. The Breusch-Pagan LM test evaluates the pooled-versus-random-effects comparison for the matched rich-control specifications, using the unbalanced-panel implementation in \\texttt{plm}. The Hausman test evaluates the fixed-versus-random-effects comparison on the matched rich-control specifications without wave dummies. Small p-values therefore reject the simpler or stronger-assumption model in favour of the more flexible alternative. Significance: *** \\(p < 0.01\\), ** \\(p < 0.05\\), * \\(p < 0.10\\).",
     "\\end{minipage}",
     "\\end{table}"
   )

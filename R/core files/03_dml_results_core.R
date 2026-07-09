@@ -1,5 +1,7 @@
-#  run 01_clean_ukhls_youth.R first
-#  this file builds the preliminary chapter 5 regression tables
+# Chapter 5 DML and preliminary regression outputs.
+#
+# Run 01_data_core.R first. This script estimates the pooled OLS, PLR-DML, and
+# IRM-DML tables used in the main text and appendix.
 
 #  load the packages used for linear, fixed-effects, and dml estimation
 library(dplyr)
@@ -15,8 +17,17 @@ library(data.table)
 lgr::get_logger("mlr3")$set_threshold("warn")
 
 #  define the cleaned input data and the folder for regression tables
-data_path <- "data/analysis/ukhls_youth_l_to_o_clean.rds"
-tables_dir <- "tables"
+project_dir <- normalizePath(
+  Sys.getenv("THESIS_PROJECT_DIR", unset = "."),
+  mustWork = TRUE
+)
+data_path <- file.path(
+  project_dir,
+  "data",
+  "analysis",
+  "ukhls_youth_l_to_o_clean.rds"
+)
+tables_dir <- file.path(project_dir, "tables")
 dir.create(tables_dir, recursive = TRUE, showWarnings = FALSE)
 
 #  load the cleaned chapter 3 dataset
