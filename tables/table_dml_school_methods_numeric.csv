@@ -1,5 +1,0 @@
-"framework","outcome","treatment","learner","estimate","std_error","p_value","n"
-"PLR","school_dissatisfaction","social_media_weekday","Elastic net",0.0746512249634982,0.0349074477378133,0.0324723567910672,4316
-"PLR","school_dissatisfaction","social_media_weekday","Lasso",0.0724562080760616,0.0349594696079531,0.0382116222498916,4316
-"PLR","school_dissatisfaction","social_media_weekday","Random forest",0.0775376687160652,0.0347320173997172,0.0255849008664684,4316
-"PLR","school_dissatisfaction","social_media_weekday","Neural net",0.0739015258722992,0.035268189340767,0.0361340343883248,4316

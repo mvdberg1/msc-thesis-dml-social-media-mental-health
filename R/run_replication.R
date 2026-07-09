@@ -1,16 +1,16 @@
-# Reproduce the thesis outputs from the project root.
+# Reproduce the compact thesis replication code from the project root.
 #
 # Usage:
 #   Rscript R/run_replication.R core
-#   Rscript R/run_replication.R full
+#   Rscript R/run_replication.R production
 
 mode <- if (length(commandArgs(trailingOnly = TRUE))) {
   commandArgs(trailingOnly = TRUE)[1]
 } else {
   "core"
 }
-if (!(mode %in% c("core", "full"))) {
-  stop("Mode must be 'core' or 'full'.")
+if (!(mode %in% c("core", "production"))) {
+  stop("Mode must be 'core' or 'production'.")
 }
 
 project_dir <- normalizePath(
@@ -48,49 +48,13 @@ if (length(missing_packages)) {
 }
 
 run_script("R/thesis files/01_clean_ukhls_youth.R")
-run_script("R/thesis files/02_preliminary_ols.R")
-run_script("R/thesis files/03_linear_panel_benchmarks.R")
-run_script("R/core files/03_prepare_core_inputs.R")
+run_script("R/core files/01_data_core.R")
+run_script("R/core files/02_methodology_core.R")
+run_script("R/core files/03_results_core.R")
 
-if (mode == "full") {
-  outcomes <- c(
-    "life_dissatisfaction",
-    "loneliness",
-    "schoolwork_dissatisfaction",
-    "school_dissatisfaction"
-  )
-  for (outcome in outcomes) {
-    run_script(
-      "R/core files/04_fe_dml_comparison.R",
-      paste0("FE_DML_OUTCOME=", outcome)
-    )
-    run_script(
-      "R/core files/05_fe_irm_comparison.R",
-      paste0("FE_IRM_OUTCOME=", outcome)
-    )
-  }
-  run_script("R/core files/06_robustness_design_checks.R")
-  run_script("R/core files/07_robustness_dml_diagnostics.R")
-  run_script("R/core files/08_weekend_fe_dml_comparison.R")
-  run_script("R/core files/09_robustness_paired_comparisons.R")
-}
-
-run_script("R/core files/10_results_summary_figure.R")
-
-latexmk <- Sys.which("latexmk")
-if (nzchar(latexmk)) {
-  message("\nCompiling thesis.tex")
-  status <- system2(
-    latexmk,
-    c("-pdf", "-interaction=nonstopmode", "thesis.tex"),
-    stdout = "",
-    stderr = ""
-  )
-  if (!identical(status, 0L)) {
-    stop("LaTeX compilation failed.", call. = FALSE)
-  }
-} else {
-  message("latexmk was not found; tables and figures were generated without PDF compilation.")
+if (mode == "production") {
+  run_script("R/thesis files/02_preliminary_ols.R")
+  run_script("R/thesis files/03_linear_panel_benchmarks.R")
 }
 
 message("\nReplication completed in '", mode, "' mode.")

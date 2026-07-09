@@ -1,4 +1,0 @@
-"framework","outcome","treatment","learner","estimate","std_error","p_value","n"
-"IRM","loneliness","high_social_media_weekday","Elastic net",0.0567368150069929,0.0688480379683565,0.409889780092072,4298
-"IRM","loneliness","high_social_media_weekday","Lasso",0.0548195223051673,0.0530985158025304,0.301879352010023,4298
-"IRM","loneliness","high_social_media_weekday","Random forest",0.0409085431526375,0.0384434819552206,0.287273574286838,4298

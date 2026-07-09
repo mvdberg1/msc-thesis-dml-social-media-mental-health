@@ -1,7 +1,9 @@
 # Replication Guide
 
-This repository contains the R and LaTeX files used for the thesis analysis.
-All commands below are run from the project root.
+This repository contains the compact R replication package for the thesis
+analysis. It is not a full thesis archive: the submitted thesis PDF and LaTeX
+source are kept outside the GitHub repository. All commands below are run from
+the project root.
 
 ## Data
 
@@ -36,50 +38,42 @@ All stochastic DML folds, learners, simulations, and bootstrap procedures use
 fixed seeds in the corresponding scripts. Respondent identifiers, rather than
 person-wave records, define folds and bootstrap clusters.
 
-## One-command workflow
+## Workflows
 
-The core workflow rebuilds the cleaned data, descriptive outputs, principal
-linear and DML tables, compact numeric inputs, summary figures, and PDF:
+The compact workflow rebuilds the cleaned analysis data and runs the
+chapter-oriented core scripts:
 
 ```sh
 Rscript R/run_replication.R core
 ```
 
-The full workflow additionally re-estimates all outcome-specific paired
-FE-DML comparisons and robustness analyses:
+The production workflow reruns the original data-construction and main
+empirical-estimation scripts:
 
 ```sh
-Rscript R/run_replication.R full
+Rscript R/run_replication.R production
 ```
 
-Full replication uses 500 respondent-cluster bootstrap replications for the
-paired comparisons and 100 repeated cross-fitting partitions for the split
-stability analysis. It is therefore substantially slower than the core run.
-The replication counts and computational settings can be changed through the
-environment variables documented near the beginning of the relevant scripts.
+The production workflow is slower because it re-estimates the Double Machine
+Learning learner comparisons and linear panel benchmarks. Random seeds and
+computational settings are fixed in the corresponding scripts.
 
 ## Script order
 
-1. `R/thesis files/01_clean_ukhls_youth.R` constructs the analysis data,
-   variable audit, descriptive tables, and descriptive figures.
-2. `R/thesis files/02_preliminary_ols.R` estimates the PLR- and IRM-DML learner
-   comparisons.
-3. `R/thesis files/03_linear_panel_benchmarks.R` estimates the linear panel
-   models and specification tests.
-4. `R/core files/03_prepare_core_inputs.R` creates the compact numeric files
-   consumed by later comparisons and summary figures.
-5. `R/core files/04_fe_dml_comparison.R` and
-   `R/core files/05_fe_irm_comparison.R` run the outcome-specific paired tests.
-6. `R/core files/06_robustness_design_checks.R` through
-   `R/core files/09_robustness_paired_comparisons.R` produce the robustness
-   analyses.
-7. `R/core files/10_results_summary_figure.R` creates the chapter summary
-   figures.
-8. `latexmk -pdf thesis.tex` compiles the thesis.
+1. `R/thesis files/01_clean_ukhls_youth.R` constructs the cleaned analysis data
+   from licensed UKHLS youth files.
+2. `R/core files/01_data_core.R` reproduces the Chapter 3 descriptive data
+   checks and figures in compact form.
+3. `R/core files/02_methodology_core.R` reproduces the Chapter 4 methodology
+   illustrations in compact form.
+4. `R/core files/03_results_core.R` reproduces the Chapter 5 main empirical
+   tables in compact form.
+5. In the optional production workflow, `R/thesis files/02_preliminary_ols.R`
+   and `R/thesis files/03_linear_panel_benchmarks.R` rerun the original DML and
+   linear panel estimation scripts used for the final thesis outputs.
 
-Generated analysis data are stored under `data/analysis/`; numeric estimates
-and LaTeX tables under `tables/`; figures under `figures/`; and the final
-document as `thesis.pdf`. The raw UKHLS files are never modified. In a public
-GitHub or Canvas replication package, `data/analysis/` should be regenerated
-locally by licensed users rather than redistributed, because it can contain
-cleaned individual-level extracts from the restricted survey data.
+Generated analysis data are stored locally under `data/analysis/`; numeric
+estimates under `tables/`; and figures under `figures/`. These generated
+folders are not redistributed in the GitHub repository. The raw UKHLS files are
+never modified. Licensed users can regenerate the local outputs from the
+scripts above.
