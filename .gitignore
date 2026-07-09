@@ -68,7 +68,7 @@ papers/
 stata overzicht variabelen/
 ~$*
 
-# Optional presentation/build copies that are not needed for thesis replication
+# Not needed for thesis 
 thesis latex/*
 thesis_presentation_beamer.*
 Progress Report 4 - MSc Thesis.pdf
