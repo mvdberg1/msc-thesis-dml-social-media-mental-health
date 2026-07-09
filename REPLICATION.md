@@ -1,8 +1,7 @@
 # Replication Guide
 
 This repository contains the core R replication package for the thesis
-analysis. It is not a full thesis archive: the submitted thesis PDF and LaTeX
-source are kept outside the GitHub repository. All commands below are run from
+analysis. All commands below are run from
 the project root.
 
 ## Data
@@ -31,8 +30,7 @@ The analysis was run with R 4.4 and the following principal packages used by
 the core scripts:
 `DoubleML`, `mlr3`, `mlr3learners`, `data.table`, `dplyr`, `haven`, `plm`,
 `sandwich`, `lmtest`, `glmnet`, `ranger`, `nnet`, and `lgr`. The exact versions
-used for the final analysis are recorded in `R/package_versions.csv`. A TeX
-installation is not needed for these core scripts.
+used for the final analysis are recorded in `R/package_versions.csv`. 
 
 All stochastic DML folds, learners, simulations, and bootstrap procedures use
 fixed seeds in the corresponding scripts. Respondent identifiers, rather than
