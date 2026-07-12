@@ -1,7 +1,7 @@
 # Core file 3: empirical methods and numeric results.
 #
-# Purpose: run the main estimators used in the thesis without any LaTeX table
-# formatting. Outputs are numeric CSV files only.
+# Purpose: run the main estimators used in the thesis
+# Outputs are numeric CSV files only.
 
 suppressPackageStartupMessages({
   library(data.table)
