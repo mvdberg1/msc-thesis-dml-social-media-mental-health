@@ -39,7 +39,7 @@ person-wave records, define folds and bootstrap clusters.
 ## Workflows
 
 The core workflow rebuilds the cleaned analysis data and runs the empirical
-methods without LaTeX table or figure formatting:
+methods:
 
 ```sh
 Rscript R/run_replication.R
